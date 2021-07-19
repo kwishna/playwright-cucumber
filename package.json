@@ -1,0 +1,55 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "description": "Playwright With Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "api": "DEBUG=pw:api cucumber-js",
+    "build": "rimraf build && npm run format && npm run lint && tsc && npm run cucumber-check",
+    "cucumber-check": "cucumber-js features/**/*.feature --dry-run --require src/env/set-environment-variables.ts --require src/world/custom-world.ts --require src/steps/**/*.ts --require src/hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format summary --format progress --format progress-bar --publish-quiet",
+    "debug": "PWDEBUG=1 DEBUG=pw:api cucumber-js",
+    "video": "PWVIDEO=1 cucumber-js",
+    "eslint-fix": "eslint ./ --ext .js,.ts,.tsx --fix",
+    "eslint-init": "eslint --init",
+    "format": "prettier --write \"**/*.{ts,tsx,css,html}\" ",
+    "lint": "eslint ./ --ext .js,.ts,.tsx --format visualstudio --no-color --report-unused-disable-directives",
+    "only": "npm run cucumber -- --tags @only",
+    "report": "open reports/report.html",
+    "snippets": "cucumber-js features/**/*.feature --dry-run --format snippets",
+    "steps-usage": "cucumber-js features/**/*.feature --dry-run",
+    "all": "cucumber-js features/**/*.feature",
+    "test:publish": "cucumber-js features/**/*.feature  --require src/env/set-environment-variables.ts --require src/world/custom-world.ts --require src/steps/**/*.ts --require src/hooks/**/*.ts  --require-module ts-node/register --publish",
+    "test": "cucumber-js"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "jest"
+  ],
+  "author": "Krishna Kumar Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.0",
+    "@cucumber/messages": "^16.0.1",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^5.4.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "jest-html-reporters": "^2.1.6",
+    "jest-junit": "^12.2.0",
+    "open": "^6.4.0",
+    "playwright": "^1.12.3",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24"
+  }
+}

@@ -1,0 +1,205 @@
+[
+  {
+    "description": "    To Test Google Search Functionality.",
+    "elements": [
+      {
+        "description": "",
+        "id": "google-search-functionality;google-seach-scenario.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Google Seach Scenario.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Navigate To Google Homepage",
+            "match": {
+              "location": "src\\steps\\google.steps.ts:2"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter A Search Keyword",
+            "match": {
+              "location": "src\\steps\\google.steps.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Hit The Enter Button",
+            "match": {
+              "location": "src\\steps\\google.steps.ts:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Print The Result Count",
+            "match": {
+              "location": "src\\steps\\google.steps.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "google-search-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Google Search Functionality",
+    "tags": [],
+    "uri": "features\\googleSearch.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "playwright-docs;change-theme",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Change theme",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Go to the playwright website",
+            "match": {
+              "location": "src\\steps\\playwright.steps.ts:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Change theme to \"light\" mode",
+            "match": {
+              "location": "src\\steps\\playwright.steps.ts:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Snapshot",
+            "match": {
+              "location": "src\\steps\\general.steps.ts:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Change theme to \"dark\" mode",
+            "match": {
+              "location": "src\\steps\\playwright.steps.ts:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Snapshot",
+            "match": {
+              "location": "src\\steps\\general.steps.ts:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "playwright-docs",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Playwright docs",
+    "tags": [
+      {
+        "name": "@foo",
+        "line": 1
+      }
+    ],
+    "uri": "features\\playwright.feature"
+  }
+]
